@@ -210,6 +210,21 @@
             <p style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Canter</p>
           </div>
         </div>
+        <div class="columns">
+          <div class="column" style="position: relative;">
+            <video autoplay muted loop playsinline controls src="./static/clips/raw_walk.mp4" style="width:100%;"></video>
+            <!-- <p style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); color: rgb(0, 0, 0); z-index: 2; background-color: rgb(255, 255, 255); padding: 5px 10px; border-radius: 5px; font-size: 30px; font-weight: bold;">Walk</p> -->
+            <!-- <p style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Walk</p> -->
+          </div>
+          <div class="column" style="position: relative;">
+            <video autoplay muted loop playsinline controls src="./static/clips/raw_pace.mp4" style="width:100%;"></video>
+            <!-- <p style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Pace</p> -->
+          </div>
+          <div class="column" style="position: relative;">
+            <video autoplay muted loop playsinline controls src="./static/clips/raw_canter.mp4" style="width:100%;"></video>
+            <!-- <p style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Canter</p> -->
+          </div>
+        </div>
         <br>
       </div> 
     </div>
@@ -349,12 +364,16 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full">
-        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">Comparison with Baseline</h2>
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">Comparative Results</h2>
         <div class="columns">
-          <!-- <div class="column" style="position: relative;"> -->
-          <video autoplay muted loop playsinline controls src="./static/clips/Comparison_baseline.mp4" style="width:70%;;position: absolute; left: 15%;"></video>
-            <!-- <p style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Indoor Stairs 01</p> -->
-          <!-- </div> -->
+          <div class="column" style="position: relative;">
+          <video autoplay muted loop playsinline controls src="./static/clips/Comparison_baseline.mp4" style="width:100%;"></video>
+            <p style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">With Baseline</p>
+          </div>
+          <div class="column" style="position: relative;">
+            <video autoplay muted loop playsinline controls src="./static/clips/Comparison_weight.mp4" style="width:100%;"></video>
+              <p style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">With Zero Residual Penalty</p>
+            </div>
           <!-- <div class="column" style="position: relative;"> -->
             <!-- <video autoplay muted loop playsinline controls src="./static/clips/flat_in_the_lab.mp4" style="border-radius:10px; width:100%;"></video> -->
             <!-- <video autoplay muted loop playsinline controls src="./static/clips/indoor_stairs_long01.mp4" style="width:70%;position: absolute; left: 15%;"></video> -->
