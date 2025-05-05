@@ -157,30 +157,13 @@
         <h2 class="title is-2" style="text-align: center; padding-bottom: 30px;">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size: 18px;">
-            Current reinforcement learning (RL)-based controllers for legged locomotion significantly rely on meticulous
-            reward tuning to track constant base velocities or goal positions
-            while maintaining smooth motion on challenging terrains. Motion
-            imitation methods leveraging demonstration data via RL have
-            demonstrated the capability to achieve smooth and agile locomotion with minimal reward shaping. However, these methods exhibit
-            limited generalization when encountering environments that did
-            not appear in the demonstration data. To leverage the advantages
-            of motion imitation while addressing its generalization limitations,
-            we propose a hierarchical RL framework that integrates motion
-            priors derived from animal motion data collected exclusively
-            on flat terrain, followed by task-specific training aimed at goal-reaching tasks in complex environments. Our framework first pre-trains a low-level policy to imitate these references on flat terrain,
-            forming robust motion priors. A high-level policy then leverages
-            these priors, learning residual adjustments to concurrently
-            manage perceptive locomotion, local obstacle avoidance, and goal-directed navigation across diverse and rugged terrain. Simulation
-            experiments illustrate the effectiveness of learned residuals in
-            adapting to progressively challenging terrains, achieving high
-            navigation success rates. Furthermore, our results demonstrate
-            improvements in energy efficiency over baseline models trained
-            without motion priors under similar reward setups. Real-world
-            experiments with an ANYmal-D quadruped robot confirm our
-            policy's capability to generalize animal-like locomotion skills to
-            complex terrains, demonstrating smooth and efficient locomotion
-            and local navigation performance amidst challenging terrains
-            with obstacles.
+            Reinforcement learning (RL)-based legged locomotion controllers often require meticulous reward tuning to track velocities or goal positions while preserving smooth motion on various terrains. 
+Motion imitation methods via RL using demonstration data reduce reward engineering but fail to generalize to novel environments. 
+We address this by proposing a hierarchical RL framework in which a low-level policy is first pre-trained to imitate animal motions on flat ground, thereby establishing motion priors.
+A subsequent high-level, goal-conditioned policy then builds on these priors, learning residual corrections that enable perceptive locomotion, local obstacle avoidance, and goal-directed navigation across diverse and rugged terrains.
+Simulation experiments illustrate the effectiveness of learned residuals in adapting to progressively challenging uneven terrains while still preserving the locomotion characteristics provided by the motion priors.
+Furthermore, our results demonstrate improvements in motion regularization over baseline models trained without motion priors under similar reward setups. 
+Real-world experiments with an ANYmal-D quadruped robot confirm our policy’s capability to generalize animal-like locomotion skills to complex terrains, demonstrating smooth and efficient locomotion and local navigation performance amidst challenging terrains with obstacles.
           </p>
         </div>
       </div>
