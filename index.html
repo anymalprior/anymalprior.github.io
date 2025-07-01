@@ -296,7 +296,7 @@ Real-world experiments with an ANYmal-D quadruped robot confirm our policy’s c
           </div>
           <div class="column" style="position: relative;">
             <!-- <video autoplay muted loop playsinline controls src="./static/clips/flat_in_the_lab.mp4" style="border-radius:10px; width:100%;"></video> -->
-            <video autoplay muted loop playsinline controls src="./static/clips/indoor_stairs_long01.mp4" style="width:70%;position: absolute; left: 15%;"></video>
+            <video autoplay muted loop playsinline controls src="./static/clips/indoor_stairs_long01.mp4" style="width:70%;left: 15%;"></video>
             <!-- <p style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); color: rgb(0, 0, 0); z-index: 2; background-color: rgb(255, 255, 255); padding: 5px 10px; border-radius: 5px; font-size: 30px; font-weight: bold;">Walk</p> -->
             <!-- <p style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: black; font-size: 25px;">Indoor Stairs 02</p> -->
           </div>
@@ -378,7 +378,8 @@ Real-world experiments with an ANYmal-D quadruped robot confirm our policy’s c
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full">
-        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">Extended Results - Training with Only Five Reward Terms</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 50px;">Extended Results</h2>
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">Training with Only Five Reward Terms</h2>
         <div class="columns">
           <div class="column" style="position: relative;">
           <video autoplay muted loop playsinline controls src="./static/clips/extended_exp.mp4" style="width:100%;"></video>
@@ -389,6 +390,69 @@ Real-world experiments with an ANYmal-D quadruped robot confirm our policy’s c
     </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">Training with RL-based Low-Level Motions on overhanging obstacle-rich terrains</h2>
+        <div class="columns">
+          <div class="columns is-centered" style="position: relative;margin-left:10%;">
+          <video autoplay muted loop playsinline controls src="./static/clips/residual_policy_with_prior_overhang_tracking.mp4" style="width:90%;"></video>
+          </div>
+          <div class="columns is-centered" style="position: relative;;margin-right:5%;">
+            <video autoplay muted loop playsinline controls src="./static/clips/Motion_prior_example.mp4" style="width:75%;"></video>
+            </div>
+        </div>
+        <br>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 50px;">
+          Training with RL-based Low-Level Motions on overhanging obstacle-rich terrains
+        </h2>
+        <div class="columns is-centered">
+          <div class="column is-half has-text-centered">
+            <video autoplay muted loop playsinline controls 
+                   src="./static/clips/residual_policy_with_prior_overhang_tracking.mp4" 
+                   style="width:100%;">
+            </video>
+          </div>
+          <div class="column is-half has-text-centered">
+            <video autoplay muted loop playsinline controls 
+                   src="./static/clips/Motion_prior_example.mp4" 
+                   style="width:50%;">
+            </video>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+</section> -->
+
+
+<!-- add text box -->
+<section class="section" style="margin-top: -2.5cm;">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <!-- <h2 class="title is-3" style="text-align: center;">Acknowledgements</h2> -->
+        <p style="text-align: center; font-size: 24px;">
+          The low-level actions (left-bottom) are recorded during testing and later replayed using the low-level policy. <br />
+          (Slight timing mismatches occur due to frame rate inconsistencies across different terrains in IsaacGym.)
+        </p>
+      </div> 
+    </div>
+  </div>
+</section>
+
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
